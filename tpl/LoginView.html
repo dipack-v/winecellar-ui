@@ -1,0 +1,28 @@
+<div class="login-wrapper col-sm-4 col-sm-offset-4">
+    <div class="text-center">
+        <a href="index.html">
+            <img class="text-center login-logo" src="assets/img/logo.png" alt="">
+        </a>
+    </div>
+    
+    <div class="login-header">Log in</div>
+    <div class="login-content">
+        <form  action="login" method="post"  role="form">
+            <div class="text-danger text-center bottom-10 login-error" >&nbsp;
+            <% if(message ===''){}else{ print('<i class="ion ion-android-warning"></i> &nbsp;'+message) }%>
+            
+            </div>
+            <div class="form-group">
+                <input type="text" name="username" class="form-control" id="username" placeholder="User Name">
+            </div>
+
+            <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control" id="" placeholder="Password">
+            </div>
+          
+				<button type="button" id="submit" class="btn btn-default btn-lg btn-block">Log in</button>
+           
+        </form>
+    </div>
+    
+</div>

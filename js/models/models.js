@@ -1,6 +1,6 @@
 window.Wine = Backbone.Model.extend({
 
-    urlRoot: "/wines",
+    urlRoot: "wines",
 
     initialize: function () {
         this.validators = {};
@@ -55,6 +55,6 @@ window.WineCollection = Backbone.Collection.extend({
 
     model: Wine,
 
-    url: "/wines"
+    url: "wines"
 
 });
